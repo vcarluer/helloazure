@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="HelloWorld.Azure" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="1" osVersion="*">
+  <Role name="HelloWorld">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="vcarluer" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBnQYJKoZIhvcNAQcDoIIBjjCCAYoCAQAxggFOMIIBSgIBADAyMB4xHDAaBgNVBAMME1dpbmRvd3MgQXp1cmUgVG9vbHMCEEB+qBPxcqSoSf/PFxUjSj0wDQYJKoZIhvcNAQEBBQAEggEAbMC7k7wEfw1ozgMkShUmiVsFoW/zr22ycJicZtnihk1poJI/efCTyjdhBWg6RNYcRJX7O15H6kQQW0K6ZoHTYxyvca4rhfNQCh1846dSqmUWbkmmkAmu6F2r2w3+z5yb7qcW7QK0RMyDx5j4GCYRye3OqSgb0ibQQnWKBEITZp/kS+WanUgmvx6R9M0MEcZmudPIH4FuaO889FtkRgnYHopuEB2s/JmJK8cZnvxDS1LAamYkYGRPZTGVlzhfTihBISr0CucIwtPpfvxztI/L8C1LNmTOQZ2H65gLBB2/lFPJAuyv8BrzrqyfDejbeQ9QqPHvmPTC3HGbaC0N01sfUTAzBgkqhkiG9w0BBwEwFAYIKoZIhvcNAwcECFJ7GBydrc+dgBC7gNDOymqU8EYkD+2m987U" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2013-06-05T23:59:59.0000000+02:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="258F2705FCBE0E16B9B418DA9633ACDCDC6E0E89" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>
