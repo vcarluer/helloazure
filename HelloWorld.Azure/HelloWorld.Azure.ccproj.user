@@ -3,5 +3,6 @@
   <PropertyGroup>
     <RemoteDesktopMoreOptions>True</RemoteDesktopMoreOptions>
     <ActivePublishProfile>HelloAzureOrtemsProduction</ActivePublishProfile>
+    <DeploymentPromptBeforeUpgrading>False</DeploymentPromptBeforeUpgrading>
   </PropertyGroup>
 </Project>
